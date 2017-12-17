@@ -1,0 +1,19 @@
+
+
+ <div class="menu">
+ 	<ul class="nav">
+ 		<li class="cli"><a href={% url 'index' %}>Home</a></li>
+ 		<li class="cli"><a href={% url 'transaction' %} >Transactions</a></li>
+ 		<li class="cli"><a href="#">Add New</a></li>
+ 		<li class="cli"><a href="#">Balance</a></li>
+ 		{% if user.is_authenticated %}
+ 		welcome {{ user.username }}
+ 		<li class="cli" style="float:right"><a href="{% url 'logout' %}?next=/login">Logout</a></li>
+ 
+ 		{% else %}
+ 		<li class="cli" style="float:right"><a href={% url 'register' %}>Sign Up</a></li>
+ 		<li class="cli" style="float:right"><a href={% url 'login' %}>Log In</a></li>
+ 		{% endif %}
+ 		<li class="cli" style="float:right"><a class="active" href={% url 'about' %}>About</a></li>
+ 	</ul>
+ </div>

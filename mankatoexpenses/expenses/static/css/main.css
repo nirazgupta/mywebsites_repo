@@ -1,0 +1,154 @@
+.page-footer{
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	background-color: #333;
+	color: green;
+	text-align: center;
+}
+
+.page-footer{
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.header{
+	margin-top: -20px;
+	height: 65px;
+	background-color: black;
+	color: green;
+}
+
+.header > h1 {
+	padding-top: 10px;
+	color: green;
+}
+
+.sml {
+	color: green;
+}
+
+h1 {
+	color: grey;
+}
+
+.menu > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333; 
+}
+
+.cli {
+	float: left;
+}
+
+.cli > a {
+	display: block;
+	color: green;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+.menu .nav > li.active > a {
+    background-color: transparent;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: row;
+}
+
+.left {
+	width: 7%;
+	background-color: #ededed;
+}
+
+.center {
+	width: 86%;
+
+	margin-top: 10px;
+}
+
+.right{
+	width: 7%;
+	background-color: #ededed;
+}
+
+/*registration form*/
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+.clearfix {
+	display: flex;
+	justify-content: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+.form-horizontal{
+	height: 100%;
+	margin-top: 82px;
+	margin-bottom: 82px;
+	margin-right: 25px;
+	margin-left: 10px;
+}
+
+.form-group {
+	margin-left: 10px;
+	margin-right:10px;
+	margin-top: 7px;
+}

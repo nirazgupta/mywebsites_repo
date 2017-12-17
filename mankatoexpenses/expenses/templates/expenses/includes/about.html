@@ -1,0 +1,15 @@
+{% extends 'expenses/layout.html' %}
+
+{% block content %}
+	<h2>Configuring the session engine</h2>
+	<p>By default, Django stores sessions in your database (using the model django.contrib.sessions.models.Session). Though this is convenient, in some setups it’s faster to store session data elsewhere, so Django can be configured to store session data on your filesystem or in your cache.
+	</p>
+	
+	<h2>Using database-backed sessions</h2>
+	<p>
+		If you want to use a database-backed session, you need to add 'django.contrib.sessions' to your INSTALLED_APPS setting.
+	</p>
+	<p>
+		Once you have configured your installation, run manage.py migrate to install the single database table that stores session data.
+	</p>
+{% endblock %}
